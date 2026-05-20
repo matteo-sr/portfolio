@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Overlay mobile -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Bouton burger -->
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+
+  <div class="app-wrapper">
+
+    <!-- ===== SIDEBAR ===== -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-name">Mattéo Scarcia R.</div>
+        <div class="logo-title">Étudiant en Informatique</div>
+      </div>
+
+      <span class="nav-label">Navigation</span>
+      <a class="nav-link" data-page="home">
+        Accueil
+      </a>
+      <a class="nav-link" data-page="projets">
+        Projets
+      </a>
+      <a class="nav-link" data-page="competences">
+        Compétences
+      </a>
+      <a class="nav-link" data-page="veille">
+        Veille
+      </a>
+
+      <div class="sidebar-footer">
+        <p>Portfolio · BTS SIO<br>2026</p>
+      </div>
+    </nav>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main class="main-content">
+
+      <!-- ===== PAGE ACCUEIL ===== -->
+      <section class="page" id="page-home">
+        <div class="hero">
+          <div class="hero-eyebrow">// Portfolio</div>
+          <h1>
+            Bonjour,<br>
+            <span class="highlight">Mattéo S.</span>
+          </h1>
+          <p>
+            Étudiant en BTS SIO option SLAM. Passionné par le développement web et logicielle.
+          </p>
+          <div class="hero-cta">
+            <button class="btn btn-primary" onclick="goTo('projets')">Voir mes projets</button>
+            <button class="btn btn-outline" onclick="goTo('competences')">Mes compétences</button>
+          </div>
+        </div>
+
+        <!-- Projets récents -->
+        <div class="quick-section">
+          <h2>Projets récents</h2>
+          <div class="quick-grid" id="home-recent-projects"></div>
+        </div>
+
+        <!-- Compétences -->
+        <div class="quick-section">
+          <h2>Compétences</h2>
+          <div class="quick-grid" id="home-competences"></div>
+        </div>
+
+        <!-- Galerie photos -->
+        <div class="quick-section gallery-section">
+          <h2>Galerie</h2>
+          <div class="home-gallery" id="home-gallery"></div>
+        </div>
+      </section>
+
+      <!-- ===== PAGE PROJETS ===== -->
+      <section class="page" id="page-projets">
+        <div class="page-header">
+          <div class="breadcrumb">Portfolio <span>/ Projets</span></div>
+          <h1>Mes <em>Projets</em></h1>
+        </div>
+        <div class="cards-grid" id="projects-grid"></div>
+      </section>
+
+      <!-- ===== PAGE COMPÉTENCES ===== -->
+      <section class="page" id="page-competences">
+        <div class="page-header">
+          <div class="breadcrumb">Portfolio <span>/ Compétences</span></div>
+          <h1>Mes <em>Compétences</em></h1>
+        </div>
+        <div class="cards-grid" id="competences-grid"></div>
+      </section>
+
+      <!-- ===== PAGE VEILLE ===== -->
+      <section class="page" id="page-veille">
+        <div class="page-header">
+          <div class="breadcrumb">Portfolio <span>/ Veille</span></div>
+          <h1>Veille <em>Informationnelle</em></h1>
+        </div>
+        <div class="veille-grid" id="veille-container"></div>
+      </section>
+
+      <!-- ===== DÉTAIL PROJET ===== -->
+      <div class="detail-view" id="detail-project"></div>
+
+      <!-- ===== DÉTAIL COMPÉTENCE ===== -->
+      <div class="detail-view" id="detail-competence"></div>
+
+    </main>
+  </div>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visionneuse d'images">
+    <button class="lb-close" id="lb-close" aria-label="Fermer">✕</button>
+    <button class="lb-nav" id="lb-prev" aria-label="Image précédente">‹</button>
+    <button class="lb-nav" id="lb-next" aria-label="Image suivante">›</button>
+    <div class="lb-inner">
+      <img id="lb-img" src="" alt="">
+      <div class="lb-counter" id="lb-counter"></div>
+    </div>
+    <div class="lb-zoom-hint">Double-clic ou molette pour zoomer · Échap pour fermer</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,527 @@
+{
+  "competences": [
+    {
+      "id": "c1",
+      "nom": "Gérer le patrimoine informatique",
+      "sous_competences": [
+        { "id": "c1-s1", "nom": "Recenser et identifier les ressources numériques" },
+        { "id": "c1-s2", "nom": "Exploiter des référentiels, normes et standards adoptés par le prestataire informatique" },
+        { "id": "c1-s3", "nom": "Mettre en place et vérifier les niveaux d'habilitation associés à un service" },
+        { "id": "c1-s4", "nom": "Vérifier les conditions de la continuité d'un service informatique" },
+        { "id": "c1-s5", "nom": "Gérer des sauvegardes" },
+        { "id": "c1-s6", "nom": "Vérifier le respect des règles d'utilisation des ressources numériques" }
+      ]
+    },
+    {
+      "id": "c2",
+      "nom": "Répondre aux incidents et aux demandes d'assistance et d'évolution",
+      "sous_competences": [
+        { "id": "c2-s1", "nom": "Collecter, suivre et orienter des demandes" },
+        { "id": "c2-s2", "nom": "Traiter des demandes concernant les services réseau et système, applicatifs" },
+        { "id": "c2-s3", "nom": "Traiter des demandes concernant les applications" }
+      ]
+    },
+    {
+      "id": "c3",
+      "nom": "Développer la présence en ligne de l'organisation",
+      "sous_competences": [
+        { "id": "c3-s1", "nom": "Participer à la valorisation de l'image de l'organisation sur les médias numériques en tenant compte du cadre juridique et des enjeux économiques" },
+        { "id": "c3-s2", "nom": "Référencer les services en ligne de l'organisation et mesurer leur visibilité" },
+        { "id": "c3-s3", "nom": "Participer à l'évolution d'un site Web exploitant les données de l'organisation" }
+      ]
+    },
+    {
+      "id": "c4",
+      "nom": "Travailler en mode projet",
+      "sous_competences": [
+        { "id": "c4-s1", "nom": "Analyser les objectifs et les modalités d'organisation d'un projet" },
+        { "id": "c4-s2", "nom": "Planifier les activités" },
+        { "id": "c4-s3", "nom": "Évaluer les indicateurs de suivi d'un projet et analyser les écarts" }
+      ]
+    },
+    {
+      "id": "c5",
+      "nom": "Mettre à disposition des utilisateurs un service informatique",
+      "sous_competences": [
+        { "id": "c5-s1", "nom": "Réaliser les tests d'intégration et d'acceptation d'un service" },
+        { "id": "c5-s2", "nom": "Déployer un service" },
+        { "id": "c5-s3", "nom": "Accompagner les utilisateurs dans la mise en place d'un service" }
+      ]
+    },
+    {
+      "id": "c6",
+      "nom": "Organiser son développement professionnel",
+      "sous_competences": [
+        { "id": "c6-s1", "nom": "Mettre en place son environnement d'apprentissage personnel" },
+        { "id": "c6-s2", "nom": "Mettre en œuvre des outils et stratégies de veille informationnelle" },
+        { "id": "c6-s3", "nom": "Gérer son identité professionnelle" },
+        { "id": "c6-s4", "nom": "Développer son projet professionnel" }
+      ]
+    }
+  ],
+  "projets": [
+    {
+      "id": "p1",
+      "nom": "M2L - Réservation  de salles - Ticketing",
+      "description": "Mise à jour du logiciel de gestion de réservation, avec gestion de validation des saisies, nouveaux besoins et modification de BDD.",
+      "image": "assets/projets/projet1/template.png",
+      "annee": "2024",
+      "technologies": ["C#","accdb"],
+      "lien": "#",
+      "sous_competences_validees": [
+        {
+          "sous_competence_id": "c1-s2",
+          "image": "assets/projets/projet1/pages.png",
+          "description": "Je me suis basé sur l'existant pour développer la suite."
+        },
+        {
+          "sous_competence_id": "c1-s4",
+          "image": null,
+          "description": "Je ne devais pas interférer avec les parties existantes et fonctionnelles."
+        },
+        {
+          "sous_competence_id": "c1-s5",
+          "image": null,
+          "description": "Des sauvegardes du code ont été faites sur différents supports."
+        },
+        {
+          "sous_competence_id": "c2-s1",
+          "image": ["assets/projets/projet1/listTickets.png", "assets/projets/projet1/exempleTicket.png", "assets/projets/projet1/ReponseTicket.png"],
+          "description": "Les demandes étaient déjà collectées mais on a pu suivre les demandes grâce à l'outil intégré dans GitLab."
+        },
+        {
+          "sous_competence_id": "c2-s3",
+          "image": null,
+          "description": "Toutes les demandes concernent l'application"
+        },
+        {
+          "sous_competence_id": "c4-s1",
+          "image": null,
+          "description": "cycle en v ?"
+        },
+        {
+          "sous_competence_id": "c4-s2",
+          "image": ["assets/projets/projet1/repartitionTaches.png", "assets/projets/projet1/wekan.png"],
+          "description": "On a réparti les tâches en fonction du niveau de compétences."
+        },
+        {
+          "sous_competence_id": "c4-s3",
+          "image": null,
+          "description": "Avec le suivi de ticket sur GitLab, on a pu voir les écarts possibles, et ajustements à faire si nécessaire."
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "nom": " M2L - Site statique",
+      "description": "Développement d'un site web vitrine pour la M2L pour augmenter la visibilité des ligues.",
+      "image": "assets/projets/projet2/template.png",
+      "annee": "2025",
+      "technologies": ["HTML", "CSS"],
+      "lien": "#",
+      "sous_competences_validees": [
+        {
+          "sous_competence_id": "c1-s2",
+          "image": "assets/projets/projet2/fournit.png",
+          "description": "Des fichiers ont été fournis qui contiennent une partie des référentiels."
+        },
+        {
+          "sous_competence_id": "c1-s5",
+          "image": null,
+          "description": "Des sauvegardes du code ont été faites sur différents supports."
+        },
+        {
+          "sous_competence_id": "c2-s1",
+          "image": null,
+          "description": "Les demandes étaient déjà collectées, je les ai répertoriées dans Wekan pour les suivre."
+        },
+        {
+          "sous_competence_id": "c3-s1",
+          "image": null,
+          "description": "Le site permet la mise en avant de l'organisation."
+        },
+        {
+          "sous_competence_id": "c3-s2",
+          "image": "assets/projets/projet2/services.png",
+          "description": "Les différents services proposés par l'organisation sont présentés sur le site."
+        },
+        {
+          "sous_competence_id": "c3-s3",
+          "image": "assets/projets/projet2/donnees.png",
+          "description": "la construction du site web a été faite en prenant en compte les données de l'organisation fournies."
+        },
+        {
+          "sous_competence_id": "c4-s1",
+          "image": null,
+          "description": "cycle en v ?"
+        },
+        {
+          "sous_competence_id": "c4-s2",
+          "image": "assets/projets/projet2/wekan.png",
+          "description": "Les tâches ont été réparties au choix en début d'AP."
+        },
+        {
+          "sous_competence_id": "c4-s3",
+          "image": null,
+          "description": "Wekan permet de faire le suivi et de repérer les différents écarts."
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "nom": "M2L - Site dynamique",
+      "description": "Évolution du site vitrine vers un site web dynamique.",
+      "image": "assets/projets/projet3/template.png",
+      "annee": "2025",
+      "technologies": ["PHP", "HTML", "CSS", "phpMyAdmin"],
+      "lien": "#",
+      "sous_competences_validees": [
+        {
+          "sous_competence_id": "c1-s2",
+          "image": ["assets/projets/projet3/fournit.png", "assets/projets/projet3/contraintes.png"],
+          "description": "Des contraintes étaient imposées comme le fait de suivre un modèle MVC."
+        },
+        {
+          "sous_competence_id": "c1-s3",
+          "image": "assets/projets/projet3/secretaire.png",
+          "description": "Différents niveaux d'habilitation existent, comme celui de secrétaire, qui permet de faire des actions particulières."
+        },
+        {
+          "sous_competence_id": "c1-s5",
+          "image": null,
+          "description": "Des sauvegardes du code ont été faites sur différents supports."
+        },
+        {
+          "sous_competence_id": "c2-s1",
+          "image": "assets/projets/projet3/demandes.png",
+          "description": "Les demandes étaient déjà collectées, je les ai répertoriées dans Wekan pour les suivre."
+        },
+        {
+          "sous_competence_id": "c3-s1",
+          "image": null,
+          "description": "Le site permet la mise en avant de l'organisation."
+        },
+        {
+          "sous_competence_id": "c3-s2",
+          "image": "assets/projets/projet3/services.png",
+          "description": "Les différents services proposés par l'organisation sont présentés sur le site."
+        },
+        {
+          "sous_competence_id": "c3-s3",
+          "image": "assets/projets/projet3/donnees.png",
+          "description": "L'évolution du site web a été faite en prenant en utilisant les données de l'organisation issue de l'AP précédent."
+        },
+        {
+          "sous_competence_id": "c4-s1",
+          "image": null,
+          "description": "cycle en v ?"
+        },
+        {
+          "sous_competence_id": "c4-s2",
+          "image": "assets/projets/projet3/wekan.png",
+          "description": "Les tâches ont été réparties au choix en début d'AP."
+        },
+        {
+          "sous_competence_id": "c4-s3",
+          "image": null,
+          "description": "Wekan permet de faire le suivi et de repérer les différents écarts."
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "nom": "Aux Claviers Citoyens",
+      "description": "Création d'une API pour la gestion de tournois en partenariat avec l'armée.",
+      "image": "assets/projets/projet4/template.png",
+      "annee": "2025",
+      "technologies": ["PHP","Postman", "phpMyAdmin"],
+      "lien": "#",
+      "sous_competences_validees": [
+        {
+          "sous_competence_id": "c1-s2",
+          "image": "assets/projets/projet4/fournit.png",
+          "description": "Des contraintes étaient imposées comme les endpoints ou encore la structure du mea."
+        },
+        {
+          "sous_competence_id": "c1-s5",
+          "image": null,
+          "description": "Des sauvegardes du code ont été faites sur différents supports."
+        },
+        {
+          "sous_competence_id": "c2-s1",
+          "image": null,
+          "description": "Les demandes étaient déjà collectées au travers du cahier des charges et du contrat APi, Linear a été utilisé pour les suivre."
+        },
+        {
+          "sous_competence_id": "c4-s1",
+          "image": null,
+          "description": "methode agile"
+        },
+        {
+          "sous_competence_id": "c4-s2",
+          "image": ["assets/projets/projet4/categTickets.png", "assets/projets/projet4/demandes.png"],
+          "description": "On a trié par ordre d'importance et le poids de chaque ticket."
+        },
+        {
+          "sous_competence_id": "c4-s3",
+          "image": null,
+          "description": "Linear permet de faire le suivi et de repérer les différents écarts."
+        },
+        {
+          "sous_competence_id": "c5-s1",
+          "image": ["assets/projets/projet4/postman.png"],
+          "description": "Tous les endpoints ont été testés sur Postman afin de vérifier qu'ils fonctionnent et  ne viennent pas perturber le fonctionnement des autres."
+        },
+        {
+          "sous_competence_id": "c5-s3",
+          "image": null,
+          "description": "Une démonstration de l'utilisation de l'API a été fait aux clients"
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "nom": "Service de filtrage de navigation internet",
+      "description": "Programmation d'un script en PowerShell afin de filtrer automatiquement la navigation internet des utilisateurs sur un poste dans le cadre de l'évolution de la solution Mona.",
+      "image": "assets/projets/projet5/template.png",
+      "annee": "2025",
+      "technologies": ["PowerShell", "Drawio", "Markdown"],
+      "lien": "#",
+      "sous_competences_validees": [
+        {
+          "sous_competence_id": "c1-s2",
+          "image": null,
+          "description": "J'ai dû respecter la manière dont les scripts précédents étaient faits afin de faire les miens."
+        },
+        {
+          "sous_competence_id": "c1-s4",
+          "image": null,
+          "description": "Mon script ne devait pas rentrer en confrontations avec les autres."
+        },
+        {
+          "sous_competence_id": "c1-s5",
+          "image": null,
+          "description": "Des sauvegardes du code ont été faites sur différents supports."
+        },
+        {
+          "sous_competence_id": "c2-s1",
+          "image": "assets/projets/projet5/demandes.png",
+          "description": "J'ai collecté les demandes, puis je les ai répertoriées sur Wekan pour les suivre."
+        },
+        {
+          "sous_competence_id": "c3-s1",
+          "image": null,
+          "description": "Mon travail permet que la solution MONA respecte le RGPD"
+        },
+        {
+          "sous_competence_id": "c4-s1",
+          "image": null,
+          "description": "methode pomodoro"
+        },
+        {
+          "sous_competence_id": "c4-s2",
+          "image": ["assets/projets/projet5/taches.png", "assets/projets/projet5/wekan.png"],
+          "description": "J'ai trié par ordre de priorité, puis après les retours chaque semaine j'analysais à nouveau les priorités."
+        },
+        {
+          "sous_competence_id": "c5-s2",
+          "image": null,
+          "description": "J'ai fait un script qui permet l'installation et l'utilisation du premier script, le déploiement final aura lieu que plus tard."
+        },
+        {
+          "sous_competence_id": "c6-s1",
+          "image": null,
+          "description": "Afin de répondre aux besoins qui me sont demandés, j'ai dû m'informer sur le PowerShell."
+        },
+        {
+          "sous_competence_id": "c6-s3",
+          "image": ["assets/projets/projet5/linkedin.png"],
+          "description": "Mon expérience dans ce projet est visible sur LinkedIn, un réseau social professionnel."
+        },
+        {
+          "sous_competence_id": "c6-s4",
+          "image": null,
+          "description": "Apprendre à utiliser PowerShell permet de monter en compétences."
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "nom": "Développement de modules web",
+      "description": "Développement de différents modules/fonctionnalités en VueJs, PHP et tailwind CSS avec Laravel.",
+      "image": "assets/projets/projet6/template.png",
+      "annee": "2026",
+      "technologies": ["VueJs", "Laravel", "tailwind CSS", "PHP", "phpMyAdmin"],
+      "lien": "#",
+      "sous_competences_validees": [
+        {
+          "sous_competence_id": "c1-s1",
+          "image": null,
+          "description": "J'ai analysé tout ce qui m'a été donné. Permet le cadrage du projet avec une compréhension de son environnement."
+        },
+        {
+          "sous_competence_id": "c1-s2",
+          "image": ["assets/projets/projet6/normes1.png", "assets/projets/projet6/normes2.png", "assets/projets/projet6/normes3.png"],
+          "description": "Je me suis basé sur l'existant pour développer la suite."
+        },
+        {
+          "sous_competence_id": "c1-s4",
+          "image": null,
+          "description": "Mes productions ne devaient pas rentrer en conflit avec le code existant."
+        },
+        {
+          "sous_competence_id": "c1-s5",
+          "image": null,
+          "description": "Des sauvegardes du code ont été faites sur différents supports."
+        },
+        {
+          "sous_competence_id": "c2-s1",
+          "image": null,
+          "description": "Les demandes principales ont été données, puis j'ai récupéré des informations supplémentaires. Linear a été utilisé pour suivre les demandes."
+        },
+        {
+          "sous_competence_id": "c3-s1",
+          "image": ["assets/projets/projet6/mail1.png", "assets/projets/projet6/mail2.png"],
+          "description": ""
+        },
+        {
+          "sous_competence_id": "c3-s3",
+          "image": ["assets/projets/projet6/avisGoogle.png", "assets/projets/projet6/contrepartiePerso.png", "assets/projets/projet6/galerie1.png", "assets/projets/projet6/galerie2.png"],
+          "description": ""
+        },
+        {
+          "sous_competence_id": "c4-s1",
+          "image": null,
+          "description": "methode agile"
+        },
+        {
+          "sous_competence_id": "c4-s2",
+          "image": ["assets/projets/projet6/demandes1.png", "assets/projets/projet6/demandes2.png", "assets/projets/projet6/demandes3.png", "assets/projets/projet6/demandes4.png"],
+          "description": "J'ai trié par ordre de priorité."
+        },
+        {
+          "sous_competence_id": "c4-s3",
+          "image": null,
+          "description": "Linear permet de faire le suivi et de repérer les différents écarts."
+        },
+        {
+          "sous_competence_id": "c5-s2",
+          "image": null,
+          "description": "Pour déployer, j'ai d'abord dû tester mon code dans un environnement de test, puis j'ai pu le mettre en production."
+        },
+        {
+          "sous_competence_id": "c6-s1",
+          "image": null,
+          "description": "Afin de répondre aux besoins qui me sont demandés, j'ai dû m'informer sur Vuejs, Laravel."
+        },
+        {
+          "sous_competence_id": "c6-s3",
+          "image": ["assets/projets/projet6/linkedin.png"],
+          "description": "Mon expérience dans ce projet est visible sur LinkedIn, un réseau social professionnel."
+        },
+        {
+          "sous_competence_id": "c6-s4",
+          "image": null,
+          "description": "Apprendre à utiliser Vuejs et Laravel permet de monter en compétences."
+        }
+      ]
+    }
+  ],
+  "galerie": [
+    {
+      "src": "assets/synthese.png",
+      "legende": "Tableau de synthèse"
+    },
+    {
+      "src": "assets/competencesB1.png",
+      "legende": "Compétences du bloc 1"
+    }
+  ],
+  "veille": {
+    "tagsCommuns": ["Développement web", "Cybersécurité", "Laravel", "Bonnes pratiques"],
+
+    "sujets": [
+      {
+        "id": "Laravel",
+        "titre": "Laravel",
+        "description": "Framework PHP pour le développement web."
+      },
+      {
+        "id": "cyber",
+        "titre": "Cybersécurité",
+        "description": "Sécurité web, OWASP, vulnérabilités et protection des applications."
+      }
+    ],
+    "articles": [
+      {
+        "id": "v1",
+        "veille": "Laravel",
+        "titre": "Storage Cache Store in Laravel 13.10.0",
+        "date": "2025-05-19",
+        "url": "https://laravel-news.com/laravel-13-10-0",
+        "resume": "Laravel introduit un storage cache driver utilisant le système de fichiers et une meilleure gestion des queues inactives.",
+        "info-cle": "Présentation de la nouvelle version. Utile pour les environnements serverless ou sans cache dédié comme Laravel Vapor."
+      },
+      {
+        "id": "v2",
+        "veille": "Laravel",
+        "titre": "Statamic : le CMS Laravel qui va vous faire gagner un temps énorme",
+        "date": "2026-04-03",
+        "url": "https://laravel-france.com/posts/statamic-un-cms-laravel-que-tout-developpeur-devrait-connaitre",
+        "resume": "Statamic est un CMS basé sur Laravel qui permet de créer des sites web rapidement.",
+        "info-cle": "Découverte d'un outil pour le développement de sites web avec Laravel, Support récent de Vuejs v3."
+      },
+      {
+        "id": "v1",
+        "veille": "cyber",
+        "titre": "GitHub Breach: TeamPCP Steals 3,800 Repositories via VS Code Extension",
+        "date": "2026-05-20",
+        "url": "https://hackread.com/github-breach-teampcp-repositories-vs-code-extension/",
+        "resume": "Exploitation d'une vulnérabilité dans une extension VS Code pour voler des données de GitHub.",
+        "info-cle": "Problèmes des mises à jour automatiques des extensions (juste 11 min), extension compromise non identifiée par github."
+      },
+      {
+        "id": "v2",
+        "veille": "cyber",
+        "titre": "Microsoft Takes Down Malware-Signing Service Behind Ransomware Attacks",
+        "date": "2026-05-20",
+        "url": "https://thehackernews.com/2026/05/microsoft-takes-down-malware-signing.html",
+        "resume": "Microsoft a supprimé un service de signature de logiciels malveillants utilisé dans des attaques de rançongiciel.",
+        "info-cle": "Importance de surveiller les activités des fournisseurs de logiciels et de maintenir à jour les systèmes de sécurité."
+      }
+    ],
+    "procede": {
+
+      "outils": [
+        "Feedly",
+        "Google Alerts",
+        "Youtube",
+        "Reddit",
+        "Twitter/X"
+      ],
+
+      "etapes": [
+        {
+          "titre": "Définir le périmètre",
+          "description": "J'ai ciblé la cybersécurité puisque c'est un domaine crucial pour le développement web et la protection des données et Laravel avec mon stage et de part son utilisation dans le monde professionnel."
+        },
+        {
+          "titre": "Configurer les sources",
+          "description": "J'ai paramétré des alertes Google sur des mots-clés et ajouté des flux RSS dans Feedly."
+        },
+        {
+          "titre": "Filtrer et sélectionner",
+          "description": "Toutes les une à deux semaines, je parcours les articles collectés et je sélectionne ceux qui sont les plus pertinents et fiables."
+        },
+        {
+          "titre": "Analyser et synthétiser",
+          "description": "Je lis en détail les articles retenus et j'identifie ce qui est intéressant à apprendre et/ou applicable à mes projets."
+        },
+        {
+          "titre": "Archiver et partager",
+          "description": "Tout est ensuite trié dans des dossiers selon les sujets, pour les retrouver facilement au besoin."
+        }
+      ]
+    }
+  }
+}
